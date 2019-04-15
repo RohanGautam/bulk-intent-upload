@@ -9,8 +9,8 @@ with open(r'fake_usersays_en.json') as f:
     template_userSays=json.loads(f.read())
 
 
-pattern=r'[Ww]here is (.*)\?'
-with open('../bulk-FB-2.csv') as csv_file:
+pattern=r'[Ww]hat does (.*) mean' # some regular expressions to extract the meat of the question, to be used in the title of the intent
+with open('bulk-acronym-2.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
