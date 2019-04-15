@@ -11,6 +11,11 @@ Simple bulk intent upload in Dialogflow - google's chatbot creation platform
 ### Export the current agent as a `.zip` file.
 Extract it, and observe the intents folder. Each intent has two `.json` files associated with it: `{intentName}.json` and `{intentName}_usersays_en.json`. We aim to reproduce these using `fake.json` and `fake_usersays_en.json` as templates.
 
+Refer to the image below:
+
+![export and import screen](https://user-images.githubusercontent.com/17317792/56147934-d5be3600-5fdb-11e9-9907-a21e2ad120c5.png)
+
+
 ### Run `intentUpload_V2.py`
 *make sure you have the `acronyms` folder created in the same directory* (tho this can be easily also done in python). This uses `fake.json` and `fake_usersays_en.json` as templates to generate two files for each intent.
 
