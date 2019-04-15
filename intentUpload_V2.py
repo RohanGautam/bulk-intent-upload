@@ -25,9 +25,9 @@ with open('bulk-acronym-2.csv') as csv_file:
             q_copy['responses'][0]['messages'][0]['speech']= response
             u_copy[0]['data'][0]['text']=trainingPhrase
 
-            with open(f'FB/{intentName}.json','w') as f:
+            with open(f'acronyms/{intentName}.json','w') as f:
                 f.write(json.dumps(q_copy))
-            with open(f'FB/{intentName}_usersays_en.json','w') as f:
+            with open(f'acronyms/{intentName}_usersays_en.json','w') as f:
                 f.write(json.dumps(u_copy))
             
         line_count+=1
