@@ -15,7 +15,7 @@ with open('bulk-acronym-2.csv') as csv_file:
     line_count = 0
     for row in csv_reader:
         if line_count!=0:
-            intentName= 'F&B - '+re.findall(pattern,row[0])[0]
+            intentName= 'Acronyms - '+re.findall(pattern,row[0])[0]
             trainingPhrase = row[0]
             response = row[1]
             q_copy=deepcopy(template_question)
